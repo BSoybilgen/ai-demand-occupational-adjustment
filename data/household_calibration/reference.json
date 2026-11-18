@@ -1,0 +1,188 @@
+{
+  "scope": "Stationary calibrated open-finance equilibrium; demographic turnover, assets and equity transported explicitly.",
+  "prices": [
+    1.0,
+    1.0000000000000018
+  ],
+  "output": [
+    0.2926766939656668,
+    1.7474861882129176
+  ],
+  "Omega": [
+    0.10417284987140864,
+    0.7245104974215185
+  ],
+  "final_output": 2.0401628821785844,
+  "effective_labor": [
+    [
+      0.050788983796751404,
+      0.12260816808861869
+    ],
+    [
+      0.5122111137334516,
+      0.24550159738749458
+    ]
+  ],
+  "capital": [
+    [
+      0.21904808904812706,
+      0.01610383683865965,
+      0.02651021578858682
+    ],
+    [
+      5.877797575849743,
+      0.15848777476190692,
+      0.05266167968069851
+    ]
+  ],
+  "investment": [
+    [
+      0.006729180571818657,
+      0.001610383683865965,
+      0.0026510215788586823
+    ],
+    [
+      0.18056656611051627,
+      0.015848777476190692,
+      0.005266167968069851
+    ]
+  ],
+  "regular_recruitment": [
+    0.008870305237361771,
+    0.00019214620548497355
+  ],
+  "direct_recruitment": [
+    0.022129001761322698,
+    0.014290812321502538
+  ],
+  "direct_hires": [
+    0.018248719816504794,
+    0.019642139185963862
+  ],
+  "searchers": [
+    0.06783983913747374,
+    0.3893957129128661
+  ],
+  "job_values": [
+    1.2123660636969054,
+    0.1072445643663067
+  ],
+  "cash_accounts": [
+    0.024805361128064102,
+    0.28754092016466565,
+    0.006732305007078946,
+    0.002419672795103205
+  ],
+  "dividend": 0.17804076887047415,
+  "advances": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "capitalist_consumption": 0.15816045124076547,
+  "external_resource_inflow": 0.0,
+  "income_funding": {
+    "private_income": 0.09405908647041415,
+    "producer_distributions": [
+      0.026717603071879963,
+      0.06734148339853419
+    ],
+    "fiscal_payment": 0.14345749022443802,
+    "total_household_receipts": 0.23751657669485216,
+    "aggregate_schema": "private_fiscal_receipts_16_v2",
+    "government_pay": 0.08313821153319545,
+    "public_support": 0.060319278691242574
+  },
+  "producer_cash_before_distributions": [
+    0.051522964199944066,
+    0.35488240356319983
+  ],
+  "capitalist_financed_support": 0.060319278691242574,
+  "capitalist_financed_government_pay": 0.08313821153319545,
+  "private_GDP": 1.1232282287970197,
+  "expenditure_private_GDP": 1.1232282287970188,
+  "checks": {
+    "producer_labor": 1.1102230246251565e-16,
+    "industry_allocation": 2.7755575615628914e-17,
+    "CES_price": 1.5543122344752192e-15,
+    "CES_demand": 4.6629367034256575e-15,
+    "resource": 2.3314683517128287e-15,
+    "GDP": 8.881784197001252e-16,
+    "job_value_equation": 6.661338147750939e-16,
+    "pooled_matching_free_entry": 0.0,
+    "dividend_quote": 0.150190441111059,
+    "household_budget": 2.1679706641020147e-14,
+    "receipt_funding": 0.0
+  },
+  "interpretation": "Covered private-work receipts are appropriations from producer cash before dividends, not intermediate costs or extra output. Government pay and support have matching capitalist-budget debits. Government output remains outside private-producer GDP.",
+  "installation": [
+    0.00010211942372505045,
+    0.0031884764679623524
+  ],
+  "consolidated_cash": 0.17804076887047415,
+  "quotes": {
+    "R": 1.0101010101010102,
+    "wages": [
+      0.6031695368110527,
+      0.4132563060424634
+    ],
+    "shadow": [
+      0.670188374234503,
+      0.4591736733805149
+    ],
+    "tuition": 0.5306559469861262,
+    "dividend": 0.17804076887047415,
+    "tightness": [
+      0.8908341407582424,
+      0.7652615919475376
+    ],
+    "state_private_income": [
+      0.0032767528316137444,
+      0.005645447403129776,
+      0.0032767528316137444,
+      0.005645447403129776,
+      0.0006215661002231169,
+      0.0014244161342717458,
+      0.0006215661002231169,
+      0.0014244161342717458,
+      4.5542170462114034e-05,
+      1.1564570218982436e-05,
+      0.2555744788764348
+    ],
+    "state_government_pay": [
+      0.0,
+      0.0006599848146203149,
+      0.0,
+      0.0006599848146203149,
+      0.0,
+      0.0004491283002277422,
+      0.0,
+      0.0004491283002277422,
+      3.7865493742817073e-06,
+      2.95054964422189e-06,
+      0.2352611707915189
+    ],
+    "state_support": [
+      0.018776054403890137,
+      0.0066454110614231725,
+      0.018776054403890137,
+      0.0066454110614231725,
+      0.007216583741734198,
+      0.006682500074764898,
+      0.007216583741734198,
+      0.006682500074764898,
+      0.025846101844175556,
+      0.10237163185526477,
+      0.013711339331912356
+    ],
+    "receipt_quote_status": "Reference-date production, household cash receipts and financing reconciled; not a dynamic GE path."
+  },
+  "price": [
+    1.0,
+    1.0000000000000018
+  ],
+  "household_assets": 1.7913899687199866,
+  "initial_net_foreign_assets": 0.0,
+  "finance_accounts": 1
+}

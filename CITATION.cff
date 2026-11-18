@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this code, these data or these results, please cite the paper."
+title: "Code and data for 'When AI Automates Knowledge Work: Aggregate Demand and Occupational Adjustment'"
+type: software
+authors:
+  - family-names: Soybilgen
+    given-names: Baris
+license: CC-BY-NC-4.0
+date-released: "2026-11-18"
+repository-code: "https://github.com/BSoybilgen/ai-demand-occupational-adjustment"
+preferred-citation:
+  type: report
+  title: "When AI Automates Knowledge Work: Aggregate Demand and Occupational Adjustment"
+  authors:
+    - family-names: Soybilgen
+      given-names: Baris
+  year: 2026
+  month: 11
+  notes: "Working paper, 18 November 2026"

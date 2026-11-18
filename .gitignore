@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+# reference equilibria; computed on the first run and kept here
+results/stationary_cache/
