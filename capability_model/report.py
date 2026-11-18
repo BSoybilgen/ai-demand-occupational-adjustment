@@ -24,6 +24,7 @@ from .wording import plain          # the vocabulary of the paper; applied to ev
 OUT = par.ROOT / 'results'
 GEN = par.ROOT / 'output/tables'
 FIG = par.ROOT / 'output/figures'
+NO_DATE = {'CreationDate': None}          # figures carry no creation date, so that a rerun leaves the files unchanged
 DATES = [(1, 4), (2, 8), (4, 16), (6, 24), (10, 40), (20, 80), (40, 159)]       # (years, quarter index)
 LONG = 159                                                  # the long run: forty years after the first rise in capability
 FIRST = 80                                                  # quarters over which paths are averaged: the first twenty years
@@ -1357,7 +1358,7 @@ def figures(main, anc, pol, tra, pur):
     panel(ax[1, 1], 'D. Posted wages', [(m['wageK'], 'Knowledge work', BLUE, '-'), (m['wageM'], 'Manual work', ORANGE, '-.')], 'Percent change', zero=True, loc='upper right')
     for a in ax[1]:
         a.set_xlabel('Years since the first rise in capability')
-    reword(fig); fig.tight_layout(); fig.savefig(FIG / 'aggregates.pdf'); plt.close(fig)
+    reword(fig); fig.tight_layout(); fig.savefig(FIG / 'aggregates.pdf', metadata=NO_DATE); plt.close(fig)
 
     fig, ax = plt.subplots(2, 2, figsize=(6.6, 5.0))
     panel(ax[0, 0], 'A. Private jobs', [(m['jobsK'] - main.start['jobsK'], 'Knowledge work', BLUE, '-'), (m['jobsM'] - main.start['jobsM'], 'Manual work', ORANGE, '-.')], 'Million, change', zero=True, loc='center right')
@@ -1367,7 +1368,7 @@ def figures(main, anc, pol, tra, pur):
     ax[0, 1].set_ylim(0, None)
     for a in ax[1]:
         a.set_xlabel('Years since the first rise in capability')
-    reword(fig); fig.tight_layout(); fig.savefig(FIG / 'labor.pdf'); plt.close(fig)
+    reword(fig); fig.tight_layout(); fig.savefig(FIG / 'labor.pdf', metadata=NO_DATE); plt.close(fig)
 
     fig, ax = plt.subplots(2, 2, figsize=(6.6, 5.0))
     one = lambda y: [(y, '', BLUE, '-')]                       # the effect of capability: differences from the same cohort
@@ -1377,7 +1378,7 @@ def figures(main, anc, pol, tra, pur):
     panel(ax[1, 1], 'D. Qualified for manual work', one(m['qualified']), 'Percent')
     for a in ax[1]:
         a.set_xlabel('Years since the first rise in capability')
-    reword(fig); fig.tight_layout(); fig.savefig(FIG / 'cohort.pdf'); plt.close(fig)
+    reword(fig); fig.tight_layout(); fig.savefig(FIG / 'cohort.pdf', metadata=NO_DATE); plt.close(fig)
 
     # the two states of demand over the twenty years that the comparison averages
     without = lambda c: c.cohort[:, 2] - c.cohort_ref[:, 2] + c.cohort_out[:, 0] + c.cohort_out[:, 1]
@@ -1390,7 +1391,7 @@ def figures(main, anc, pol, tra, pur):
     for a in ax[1]:
         a.set_xlabel('Years since the first rise in capability')
     fig.legend(*ax[0, 0].get_legend_handles_labels(), loc='upper center', ncol=2, handlelength=2.2)
-    reword(fig); fig.tight_layout(rect=(0, 0, 1, 0.94)); fig.savefig(FIG / 'regimes.pdf'); plt.close(fig)
+    reword(fig); fig.tight_layout(rect=(0, 0, 1, 0.94)); fig.savefig(FIG / 'regimes.pdf', metadata=NO_DATE); plt.close(fig)
 
     # the experiment without policy and the three policy experiments
     four = lambda value: [(value(main), 'No policy', GREY, '--'), (value(pol), 'Return follows capacity use', BLUE, '-'),
@@ -1403,7 +1404,7 @@ def figures(main, anc, pol, tra, pur):
     for a in ax[1]:
         a.set_xlabel('Years since the first rise in capability')
     fig.legend(*ax[0, 0].get_legend_handles_labels(), loc='upper center', ncol=3, handlelength=2.4, columnspacing=1.4)
-    reword(fig); fig.tight_layout(rect=(0, 0, 1, 0.94)); fig.savefig(FIG / 'experiments.pdf'); plt.close(fig)
+    reword(fig); fig.tight_layout(rect=(0, 0, 1, 0.94)); fig.savefig(FIG / 'experiments.pdf', metadata=NO_DATE); plt.close(fig)
 
 
 def main():
